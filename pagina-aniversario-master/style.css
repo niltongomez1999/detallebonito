@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animación de las letras */
+.greetings span {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    animation: bounce 1.5s infinite;
+}
+
+/* Diferentes tiempos de animación para cada letra */
+.greetings span:nth-child(1) { animation-delay: 0s; }
+.greetings span:nth-child(2) { animation-delay: 0.2s; }
+.greetings span:nth-child(3) { animation-delay: 0.4s; }
+.greetings span:nth-child(4) { animation-delay: 0.6s; }
+.greetings span:nth-child(5) { animation-delay: 0.8s; }
+
+/* Mensaje descriptivo */
+.description p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Botón estilizado */
+.button button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button button:hover {
+    background: #e95b50;
+}
+
+/* Pie de página */
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Adaptabilidad a dispositivos móviles */
+@media (max-width: 768px) {
+    .greetings span {
+        font-size: 2rem;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .button button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
